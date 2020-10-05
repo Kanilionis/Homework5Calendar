@@ -16,10 +16,10 @@
     $(".saveBtn").click(function(e){
         e.preventDefault();
         if(descriptionInput !== null){
-        console.log(descriptionInput.text);
+        console.log(descriptionInput.value);
             } else{
             }
-            localStorage.setItem("tasks", descriptionInput.text);
+            localStorage.setItem("tasks", descriptionInput.value);
             })
 
 function saveData(){
