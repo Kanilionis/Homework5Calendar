@@ -6,15 +6,44 @@
   //  var timeOfDay = document.querySelector(".hour");
   //  var newTask = $(".description").val();
    var today = dayjs().format("MMMM, D, YYYY");
-   var timeBlock = dayjs().hour(8);
+   var currentTime = dayjs().format();
+   console.log(currentTime);
+   currentDay.textContent = today;
+   var timeBlock = document.querySelector(".hour");
+        timeBlock = dayjs().set("hour", 09);
+        console.log(timeBlock);
 
-//   function openCalendar(){
-  currentDay.textContent = today;
-  console.log(today);
+
+// var startTime = dayjs().startOf("day");
+
+// function timeBlockColors(){
+//     if(dayjs().isBefore)
+// }
+// var isAfter = currentTime.isAfter()
+// var hours = ["9", "10", "11", "12", "1", "2", "3", "4", "5"];
+// var getHours = dayjs().startOf("hour")
+
+// function startCalendar(e){
+//     e.preventDefault;
+// }
+
+var militaryHours = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+function timeBlockColors(){
+    var militaryTime = dayjs().get("hour");
+    console.log(militaryTime);
+    for (var i=0; i<militaryHours.length; i++){
+        if(militaryTime < militaryHours[i]){
+            $(".description").attr(".future");
+        } else if (militaryTime === militaryHours[i]){
+            $(".description").attr(".present");
+        } else if (militaryTime > militaryHours[i]){
+            $(".description").attr(".past");
+        }
+        }
     }
-  )
-    
-        
+}
+    )
+ 
       
     
     // })
@@ -25,7 +54,7 @@
     // save to local storage, pull from local storage based on index position
 
     
-    // var hours = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+    
     // for(var i=0; i<hours.length; i++){
     //   console.log(i)
 
@@ -36,20 +65,7 @@
 
     
       //find text content of description at each hour
-    // var timeBlocks = [
-    //   {
-    //     hour: dayjs(),
-    //         description: descriptionInput
-    //   },
-    //   {
-    //   hour: hours[1],
-    //   hour3: hours[2],
-    //   hour4: hours[3],
-    //   hour5: hours[4],
-    //   hour6: hours[5],
-    //   hour7: hours[6],
-    //   hour8: hours[7],
-    // ]
+   
 
 //    for(var i=0; i<timeBlocks.length; i++){
 
