@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-1">
+            <div class = "hour">9-10</div>
+            </div>
+          <div class = "col-10">
+            <input type = "text" class = "description">
+            <p class = "saved-task hidden"></p>
+            </div>
+          <div class = "col-1">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">10-11</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">11-12</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">12-1</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">1-2</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">2-3</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">3-4</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "time-block">
+        <div class = "row">
+          <div class = "col-2">
+            <div class = "hour">4-5</div>
+            </div>
+          <div class = "col-8">
+            <input type = "text" class = "description">
+            </div>
+          <div class = "col-2">
+            <button class = "saveBtn">save</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    </script>
+    <script src="script.js" type="text/javascript">
+    
+      // $(document).ready(function(){
+
+  
+
+    // var defFormat = dayjs().format();
+    // var garyBirthday = dayjs("1965-12-07T16:00:00.000Z")
+    // var anyOldDay = dayjs("1995-06-07T16:00:00.000Z");
+    // var format1 = garyBirthday.format("YYYY, MM, DD");
+    // var isAfter = garyBirthday.isAfter(anyOldDay, 'hour');
+    // console.log(isAfter);
+
+    
+    
+  //   if(savedTasks !== null){
+  //   }
+  // })
+
+  
+
+
+    // var schedule = {
+    //   hour1: 
+    // }
+
+// remove tasks from past using empty()
+
+
+
+
+      
+  
+
+//         var themeSwitcher = document.querySelector("#theme-switcher");
+// // themeSwitcher is the input element in this case
+// var container = document.querySelector(".container");
+// var mode = "dark";
+//for the themeswitcher (DOM element), we are waiting for a "click" event
+//when the click happens, we want to call the next function
+// themeSwitcher.addEventListener("click", function() {
+//   if (mode === "dark") {
+//     mode = "light";
+//     container.setAttribute("class", "light");
+//   }
+//   else {
+//     mode = "dark";
+//     container.setAttribute("class", "dark");
+//   }
+// });
+ 
+// function changeMode(e){
+//   console.log(e.target); 
+  
+//   if (mode === "dark") {
+//     mode = "light";
+//     container.setAttribute("class", "light");
+//   }
+//   else {
+//     mode = "dark";
+//     container.setAttribute("class", "dark");
+//   }
+// }
+// themeSwitcher.addEventListener("click", changeMode())
+// // in quotes ("click") is the name of the event we are targeting
+// //then we specify the function by the name, or we can create the function with function(){
+//   themeSwitcher.addEventListener("click", function(e){
+//   }) 
+//   // or can use var "e" for event (create variable at top or in () of function) - this will call the event listener function
+
+//   // tell browswer NOT to do our default...basically, "don't do what you normally do, let me do it on my own and continue with other code" - needs to be inside the callback function.  Used most often with forms.
+//   e.preventDefault(); 
+          
+
+      
+
+      // dayjs().hour()
+
+
+      
+      // $("#currentDay").text(today().format("MM DD YYYY"));
+      
+</script>
+</body>
+</html>
+
+// <!-- 1. Figure out the best way to store data for each time block, then loop through that data and display sample data on the screen for each time block; DO THIS EARLY
+// //     (extra tip: referencing military hours may help)
+// //   2. Make sure you can save that data to localStorage 
+// //     (extra tip: create a function whose sole job is to save to local storage)
+// //   3. Figure out how to determine the current time in JS (moment.js OR https://date-fns.org/ )
+// //   4. How can you create a relationship between the current time and the time for each date block
+// //     (hint: custom attributes may be one way) -->
+//  <!-- create time blocks for each hour (9-5)
+    
+//       each time block will have a save button
+//     add event listeners to save buttons
+//     use local storage to save input values
+//     JSON stringify and parse
+//     class = "past"
+//     class = "present"
+//     class = "future"
+//     onclick
+//     save to local storage
+//     grab from local storage
+//     add classes through javascript to differentiate between past, present, future -->
+    
+
+
+
+// <!-- AS AN employee with a busy schedule
+// I WANT to add important events to a daily planner
+// SO THAT I can manage my time effectively
+// ```
+
+// ## Acceptance Criteria
+
+// ```
+// GIVEN I am using a daily planner to create a schedule
+// WHEN I open the planner
+// THEN the current day is displayed at the top of the calendar
+// WHEN I scroll down
+// THEN I am presented with timeblocks for standard business hours
+// WHEN I view the timeblocks for that day
+// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+// WHEN I click into a timeblock
+// THEN I can enter an event
+// WHEN I click the save button for that timeblock
+// THEN the text for that event is saved in local storage
+// WHEN I refresh the page
+// THEN the saved events persist -->
