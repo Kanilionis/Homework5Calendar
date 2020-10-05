@@ -13,7 +13,18 @@
         timeBlock = dayjs().set("hour", 09);
         console.log(timeBlock);
 
+    $(".saveBtn").click(function(e){
+        e.preventDefault();
+        if(descriptionInput !== null){
+        console.log(descriptionInput.text);
+            } else{
+            }
+            localStorage.setItem("tasks", descriptionInput.text);
+            })
 
+function saveData(){
+
+}
 // var startTime = dayjs().startOf("day");
 
 // function timeBlockColors(){
@@ -40,45 +51,11 @@ function timeBlockColors(){
             $(".description").attr(".past");
         }
         }
-    }
-}
-    )
- 
-      
-    
-    // })
-    // if(today !==)
- 
-    // make object of time blocks
-    // turn each "description" of time block into string
-    // save to local storage, pull from local storage based on index position
-
-    
-    
-    // for(var i=0; i<hours.length; i++){
-    //   console.log(i)
-
-    // var currentHour = parseInt(dayjs().format('H'));
-    // console.log(currentHour)
+    };
 
 
-
-    
-      //find text content of description at each hour
-   
-
-//    for(var i=0; i<timeBlocks.length; i++){
-
-//    }
-//   $(".saveBtn").click(function(e){
-//     e.preventDefault();
-//     if(newTask !== null){
-//       console.log(descriptionInput.value);
-//     } else{
-      
-//     }
-//     localStorage.setItem("tasks", descriptionInput.value);
-//   })
+  
+  
 
 //   var taskStr = JSON.stringify(descriptionInput);
 
@@ -91,4 +68,4 @@ function timeBlockColors(){
 
 //   }
 //   var savedTasks = localStorage.getItem("tasks");
-// })
+    })
