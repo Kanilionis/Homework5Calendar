@@ -23,28 +23,18 @@ body {
   
   .description{
     white-space: pre-wrap;
-    width: 700px
-  }
-
-  .saved-task {
-    white-space: normal;
-    height: 80px;
-    border-top: 1px solid black;
-  }
-
-  .hidden{
-      display: none
   }
   
   .time-block{
     text-align: center;
+    margin: 5px;
     border-radius: 15px;
   }
   
   .row {
     white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid black;
+    height: 60px;
+    border-top: 1px solid white;
   }
   
   .hour {
@@ -79,5 +69,11 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  .clear-cal {
+    margin-top: 30px;
+    font-size: 10px;
+    text-align: center;
   }
   
